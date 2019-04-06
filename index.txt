@@ -1,4 +1,6 @@
-To access linux server using the commandline 
+SSH Easy Login SET UP
+---------------------
+
 ssh -i ~/.ssh/KEY-PAIRS USER@IP_ADDRESS
 
 Make it simple: So the just simple code 

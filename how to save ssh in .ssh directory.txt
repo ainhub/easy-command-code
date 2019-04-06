@@ -1,5 +1,5 @@
-How to save ssh in .ssh directory
----------------------------------
+How to save ssh in .ssh directory and setting up login via ssh
+--------------------------------------------------------------
 
 Step1: Save a keypair in a directory run the command on that directory
 
