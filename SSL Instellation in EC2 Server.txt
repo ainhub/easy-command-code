@@ -1,0 +1,25 @@
+SSL Instellation in EC2 Server: Where bitnami is installed 
+https://www.youtube.com/watch?v=vFbpQkFfwiA
+----------------------------------------------------------
+Step 1:
+
+Add two key and crt file in the folder :
+/opt/bitnami/apache2/conf
+file.crt
+file.key
+
+Eg: application-SSL.crt
+	server.key
+
+Step 2: Edit the config file :
+
+/opt/bitnami/apache2/conf/bitnami/bitnami.conf
+
+Step3: And Add this:
+
+#SSLCertificateFile "/opt/bitnami/apache2/conf/server.crt"
+#SSLCertificateKeyFile "/opt/bitnami/apache2/conf/server.key"
+#comment and replace by
+
+SSLCertificateFile "/opt/bitnami/apache2/conf/application-SSL.crt"
+SSLCertificateKeyFile "/opt/bitnami/apache2/conf/server.key"
