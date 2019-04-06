@@ -1,0 +1,20 @@
+How to save ssh in .ssh directory
+---------------------------------
+
+Step1: Save a keypair in a directory run the command on that directory
+
+	cd LOCATIONS of THE DIRECTORY
+
+Step2: Move the .pem file to user .ssh directory
+	mv KEY.pem ~/.ssh
+
+step3: limit the permision by 400 or 600 chmod
+
+	chmod 600 ~/.ssh/KEY.pem
+
+Step 4: Now ready to access the server using ssh 
+
+	ssh -i ~/.ssh/KEY.pem USER@IP_ADDRESS
+
+	eg:
+	ssh -i ~/.ssh/KEY.pem ubuntu@32.111.1.108
